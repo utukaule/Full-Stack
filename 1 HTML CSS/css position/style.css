@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+nav, footer{
+    flex-shrink: 0;
+}
+
+
+section span{
+    position: absolute;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    top: 0   ;
+    left: 0;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#logo{
+    width: 80vh;
+    height: 200px;
+    background-color: red;
+}
+

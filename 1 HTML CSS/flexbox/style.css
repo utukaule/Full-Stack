@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: pink;
+}
+
+.new{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.new div{
+    background-color: white;
+    flex-basis: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    height: 200px;
+
+}
+
+/* 
+#img{
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+#para{
+    text-align: center;
+    background-color: red;
+    display: block;
+} */
