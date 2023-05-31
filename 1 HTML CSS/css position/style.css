@@ -11,14 +11,17 @@ nav, footer{
     flex-shrink: 0;
 }
 
+section{
+    position: relative;
+}
 
 section span{
-    position: absolute;
+    position: fixed;
     background-color: yellow;
     height: 100px;
     width: 100px;
-    top: 0   ;
-    left: 0;
+    top: 0px   ;
+    right: 0;
 }
 
 nav {
