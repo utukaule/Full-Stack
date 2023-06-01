@@ -1,12 +1,13 @@
-import "./App.css";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-function App() {
+function Navbar(props) {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Textutils
+            {props.title}
           </a>
           <button
             className="navbar-toggler"
@@ -27,7 +28,7 @@ function App() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link ">About</a>
+                <a className="nav-link ">{props.about}</a>
               </li>
             </ul>
             <form className="d-flex" role="search">
@@ -44,8 +45,18 @@ function App() {
           </div>
         </div>
       </nav>
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+Navbar.propTypes = {
+    title: PropTypes.string,
+    about: PropTypes.string.isRequired
+}
+
+Navbar.defaultProps = {
+    title: 'default title',
+    about: 'default about'
+}
+
+export default Navbar
