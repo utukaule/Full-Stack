@@ -25,6 +25,10 @@ const TextArea = ({ title }) => {
     const newText = "";
     setText(newText);
   };
+
+  const Copy = () =>{
+    navigator.clipboard.writeText(text);
+  }
   return (
     <>
       <div className="container">
@@ -47,6 +51,9 @@ const TextArea = ({ title }) => {
           </button>
           <button className="btn btn-primary" onClick={remover}>
             remove All
+          </button>
+          <button className="btn btn-primary" onClick={Copy}>
+            Copy ClipBoard Text
           </button>
         </div>
         <p>Total Length : {text.length}</p>
